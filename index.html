@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charitha Weds Likith</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe0b2, #ffccbc);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9800, #e91e63);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro img {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    .intro button {
+      background: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .intro button:hover {
+      background: #fce4ec;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #e91e63;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .load-more {
+      display: block;
+      margin: 1.5rem auto;
+      padding: 0.8rem 1.5rem;
+      background: #ff5722;
+      color: white;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .load-more:hover {
+      background: #e64a19;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #f5f5f5;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .load-more {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Charitha ❤️ Likith</h1>
+    <div class="intro">
+      <img src="assets/images/RadhaKrishna.jpeg" alt="RadhaKrishna" />
+      <button id="startGallery">View Wedding Moments</button>
+    </div>
+  </header>
+
+  <main id="gallery">
+  
+
+    <section id="marriageSection">
+      <h2>Marriage</h2>
+      <div id="marriageGrid" class="image-grid"></div>
+      <button class="load-more">Load More</button>
+    </section>
+
+    <section id="receptionSection">
+      <h2>Reception</h2>
+      <div id="receptionGrid" class="image-grid"></div>
+      <button class="load-more">Load More</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Charitha & Likith. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

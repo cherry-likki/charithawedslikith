@@ -1,0 +1,106 @@
+/* Global Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f0;
+  scroll-behavior: smooth;
+}
+
+/* Intro Section */
+.intro {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff8f0, #ffe4d6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.god-img {
+  width: 150px;
+  animation: float 3s infinite ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #a0522d;
+  margin: 1rem 0 0.5rem;
+}
+
+.names {
+  font-size: 2rem;
+  color: #8b0000;
+}
+
+.names span {
+  font-size: 2rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Gallery Section */
+.gallery-container {
+  padding: 2rem;
+  background: #fff3e0;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .god-img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .names {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
